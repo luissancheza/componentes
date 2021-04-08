@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:componentes/src/pages/home_page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -10,21 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Componentes APP',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Componentes'),
-          actions: [
-            IconButton(
-              icon: Icon(Icons.person),
-            )
-          ],
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
